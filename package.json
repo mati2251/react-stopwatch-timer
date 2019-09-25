@@ -1,0 +1,32 @@
+{
+  "name": "react-stopwatch-timer",
+  "version": "0.3.0",
+  "description": "React component timer and stopwatch",
+  "main": "build/index.js",
+  "peerDependencies": {
+    "react": "^15.5.4"
+  },
+  "dependencies": {
+    "webpack": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "author": {
+    "name": "Mateusz Karłowski"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "css-loader": "^3.2.0",
+    "react": "^15.6.2",
+    "react-dom": "^16.9.0",
+    "style-loader": "^1.0.0"
+  }
+}

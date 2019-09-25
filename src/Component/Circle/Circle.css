@@ -1,0 +1,7 @@
+.react-stopwatch-timer__element {
+    position: absolute;
+    height: 15px;
+    width: 2px;
+    transition: all 500ms ease;
+}
+
