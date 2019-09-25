@@ -15,7 +15,7 @@ const ReactTimerStopwatch = (props) => {
             <Time isOn={props.isOn} hint={getHint} watchType={props.watchType} displayHours={props.displayHours}
                   displayMinutes={props.displayMinutes} displaySeconds={props.displaySeconds}
                   fromTime={props.fromTime}/>
-            {(props.displayCricle === true) ?
+            {(props.displayCircle === true) ?
                 <Circle color={props.color} tintColor={props.hintColor} hint={hint}/> : null}
             {(props.children === undefined) ?
                 <div className="react-stopwatch-timer__container">
