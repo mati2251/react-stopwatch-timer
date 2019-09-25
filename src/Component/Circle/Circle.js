@@ -13,7 +13,7 @@ const Circle = (props) => {
         return {x: xValues, y: yValues}
     };
 
-    const coordinates = circleCoordinates(40, 60, 45, 50);
+    const coordinates = circleCoordinates(40, 60, 50, 50);
     let array = [];
     for (let i = 0; i < 60; i++) {
         let tmp = 30 - i;

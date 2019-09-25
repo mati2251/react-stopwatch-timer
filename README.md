@@ -17,7 +17,126 @@ You can import component like below: <br/>
 **children:** You can put some button or etc. inside circle <br/>
 **displayHours:** `true`(default) or `false` If you don't need hours in your watch you can set this props for false <br/>
 **displayMinutes:** `true`(default) or `false` If you don't need minutes in your watch you can set this props for false <br/>
-**displaySeconds:** `true`(default) or `false` If you don't need seconds in your watch you can set this props for false
+**displaySeconds:** `true`(default) or `false` If you don't need seconds in your watch you can set this props for false <br/>
+**color:** circle elements color. Default props is unset<br/>
+**hintColor:** hint color. Default props is unset
+**callback:** function start after timer finish works
 ### Example use:
+#### Watch without circle
+photo
+```
+import React from 'react';
+import ReactTimerStopwatch from 'react-stopwatch-timer';
+
+const App = () => {
+    return (
+            <ReactTimerStopwatch isOn={true} className="react-stopwatch-timer__table" watchType="stopwatch"/>
+    );
+};
+
+export default App;
+```
+#### Watch with circle
+photo2
+```
+import React from 'react';
+import ReactTimerStopwatch from 'react-stopwatch-timer';
+
+const App = () => {
+    return (
+            <ReactTimerStopwatch isOn={true} className="react-stopwatch-timer__table" watchType="stopwatch" displayCricle={true} color="gray" hintColor="red"/>
+    );
+};
+
+export default App;
+```
+#### Stopwatch
+photo
+```
+import React from 'react';
+import ReactTimerStopwatch from 'react-stopwatch-timer';
+
+const fromTime = new Date(0, 0, 0, 0, 0, 0, 0);
+
+const App = () => {
+    return (
+        <ReactTimerStopwatch isOn={true} className="react-stopwatch-timer__table" watchType="stopwatch"
+                             displayCricle={true} color="gray" hintColor="red" fromTime={fromTime}/>
+    );
+};
+
+export default App;
+```
+#### Timer
+photo
+```
+import React from 'react';
+import ReactTimerStopwatch from 'react-stopwatch-timer';
+
+const fromTime = new Date(0, 0, 0, 0, 10, 0, 0);
+
+const App = () => {
+    return (
+        <ReactTimerStopwatch isOn={true} className="react-stopwatch-timer__table" watchType="timer"
+                             displayCricle={true} color="gray" hintColor="red" fromTime={fromTime}/>
+    );
+};
+
+export default App;
+```
+#### Without Hours
+photo
+import React from 'react';
+import ReactTimerStopwatch from 'react-stopwatch-timer';
+
+const fromTime = new Date(0, 0, 0, 0, 10, 0, 0);
+
+const App = () => {
+    return (
+        <ReactTimerStopwatch isOn={true} className="react-stopwatch-timer__table" watchType="timer"
+                             displayCricle={true} color="gray" hintColor="red" fromTime={fromTime} displayHours={false}/>
+    );
+};
+
+export default App;
+#### With button inside circle
+ photo
+ ```
+import React, {useState} from 'react';
+import ReactTimerStopwatch from 'react-stopwatch-timer';
+
+const fromTime = new Date(0, 0, 0, 0, 10, 0, 0);
+
+const App = () => {
+
+    const [isOn, setIsOn] = useState(false);
+
+    return (
+        <ReactTimerStopwatch isOn={isOn} className="react-stopwatch-timer__table" watchType="timer"
+                             displayCricle={true} color="gray" hintColor="red" fromTime={fromTime} displayHours={false}>
+            <button onClick={() => setIsOn(true) }>START</button>
+        </ReactTimerStopwatch>
+    );
+};
+
+export default App;
+```
+#### Custom style circle element
+photo
+in js file: 
+`import './App.css'` <br/>
+in css or scss file: <br/>
+```
+.react-stopwatch-timer__element {
+    width: 3px !important;
+    height: 3px !important;
+    border-radius: 5px;
+}
+
+.react-stopwatch-timer__table{
+    width: 300px !important;
+    height: 300px !important;
+}
+```
 ## 4 License
 _GNU General Public License v3.0_
