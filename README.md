@@ -23,7 +23,7 @@ You can import component like below: <br/>
 **callback:** function start after timer finish works
 ### Example use:
 #### Watch without circle
-photo
+![example](https://raw.githubusercontent.com/mati2251/react-stopwatch-timer/master/.github/example-without-circle.png) <br/>
 ```
 import React from 'react';
 import ReactTimerStopwatch from 'react-stopwatch-timer';
@@ -37,7 +37,7 @@ const App = () => {
 export default App;
 ```
 #### Watch with circle
-photo2
+![example](https://raw.githubusercontent.com/mati2251/react-stopwatch-timer/master/.github/example-watch-circle.png) <br/>
 ```
 import React from 'react';
 import ReactTimerStopwatch from 'react-stopwatch-timer';
@@ -51,7 +51,7 @@ const App = () => {
 export default App;
 ```
 #### Stopwatch
-photo
+![example](https://raw.githubusercontent.com/mati2251/react-stopwatch-timer/master/.github/stopwatch.png) </br>
 ```
 import React from 'react';
 import ReactTimerStopwatch from 'react-stopwatch-timer';
@@ -68,7 +68,7 @@ const App = () => {
 export default App;
 ```
 #### Timer
-photo
+![example](https://raw.githubusercontent.com/mati2251/react-stopwatch-timer/master/.github/timer.png) <br/>
 ```
 import React from 'react';
 import ReactTimerStopwatch from 'react-stopwatch-timer';
@@ -85,7 +85,8 @@ const App = () => {
 export default App;
 ```
 #### Without Hours
-photo
+![example](https://raw.githubusercontent.com/mati2251/react-stopwatch-timer/master/.github/without-houers.png) <br/>
+```
 import React from 'react';
 import ReactTimerStopwatch from 'react-stopwatch-timer';
 
@@ -99,8 +100,9 @@ const App = () => {
 };
 
 export default App;
+```
 #### With button inside circle
- photo
+![example](https://raw.githubusercontent.com/mati2251/react-stopwatch-timer/master/.github/withButton.png) <br/>
  ```
 import React, {useState} from 'react';
 import ReactTimerStopwatch from 'react-stopwatch-timer';
@@ -122,7 +124,7 @@ const App = () => {
 export default App;
 ```
 #### Custom style circle element
-photo
+![example](https://raw.githubusercontent.com/mati2251/react-stopwatch-timer/master/.github/custom-element.png) <br/>
 in js file: 
 `import './App.css'` <br/>
 in css or scss file: <br/>
@@ -140,3 +142,7 @@ in css or scss file: <br/>
 ```
 ## 4 License
 _GNU General Public License v3.0_
+## 5 Code Link
+[Click here](https://github.com/mati2251/react-stopwatch-timer)
+## Author
+Mateusz Karłowski [Github Profile](https://github.com/mati2251)
