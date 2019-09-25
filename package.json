@@ -28,5 +28,6 @@
     "react": "^15.6.2",
     "react-dom": "^16.9.0",
     "style-loader": "^1.0.0"
-  }
+  },
+  "license": "GNU General Public License v3.0"
 }
