@@ -76,7 +76,6 @@ const Time = (props) => {
             setText(getValidDisplayTime(hours,minutes,seconds));
         }, 1000);
     };
-
     if(props.isOn === true && isCount === false){
         if(props.watchType === "timer"){
             startTimer();

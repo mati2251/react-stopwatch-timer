@@ -13,7 +13,7 @@ const Circle = (props) => {
         return {x: xValues, y: yValues}
     };
 
-    const coordinates = circleCoordinates(50, 60, 50, 50);
+    const coordinates = circleCoordinates(40, 60, 45, 50);
     let array = [];
     for (let i = 0; i < 60; i++) {
         let tmp = 30 - i;
@@ -23,16 +23,16 @@ const Circle = (props) => {
         let style;
         if (props.hint === tmp) {
             style = {
-                left: (coordinates.y[i] + 2).toString() + "%",
-                top: (coordinates.x[i] + 2).toString() + "%",
+                left: (coordinates.y[i]).toString() + "%",
+                top: (coordinates.x[i]).toString() + "%",
                 transform: "rotate(" + (360 - i * 6).toString() + "deg)",
                 backgroundColor: props.tintColor,
                 width: "4px"
             };
         } else {
             style = {
-                left: (coordinates.y[i] + 2).toString() + "%",
-                top: (coordinates.x[i] + 2).toString() + "%",
+                left: (coordinates.y[i]).toString() + "%",
+                top: (coordinates.x[i]).toString() + "%",
                 transform: "rotate(" + (360 - i * 6).toString() + "deg)",
                 backgroundColor: props.color
             };

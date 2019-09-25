@@ -488,7 +488,7 @@ var Circle = function Circle(props) {
         return { x: xValues, y: yValues };
     };
 
-    var coordinates = circleCoordinates(50, 60, 50, 50);
+    var coordinates = circleCoordinates(40, 60, 45, 45);
     var array = [];
     for (var i = 0; i < 60; i++) {
         var tmp = 30 - i;
@@ -498,8 +498,8 @@ var Circle = function Circle(props) {
         var style = void 0;
         if (props.hint === tmp) {
             style = {
-                left: (coordinates.y[i] + 2).toString() + "%",
-                top: (coordinates.x[i] + 2).toString() + "%",
+                left: coordinates.y[i].toString() + "%",
+                top: coordinates.x[i].toString() + "%",
                 transform: "rotate(" + (360 - i * 6).toString() + "deg)",
                 backgroundColor: props.tintColor,
                 width: "4px"
