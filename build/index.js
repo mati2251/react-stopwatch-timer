@@ -488,7 +488,7 @@ var Circle = function Circle(props) {
         return { x: xValues, y: yValues };
     };
 
-    var coordinates = circleCoordinates(40, 60, 45, 45);
+    var coordinates = circleCoordinates(40, 60, 45, 50);
     var array = [];
     for (var i = 0; i < 60; i++) {
         var tmp = 30 - i;
@@ -506,8 +506,8 @@ var Circle = function Circle(props) {
             };
         } else {
             style = {
-                left: (coordinates.y[i] + 2).toString() + "%",
-                top: (coordinates.x[i] + 2).toString() + "%",
+                left: coordinates.y[i].toString() + "%",
+                top: coordinates.x[i].toString() + "%",
                 transform: "rotate(" + (360 - i * 6).toString() + "deg)",
                 backgroundColor: props.color
             };
@@ -624,7 +624,6 @@ var Time = function Time(props) {
             setText(getValidDisplayTime(hours, minutes, seconds));
         }, 1000);
     };
-
     if (props.isOn === true && isCount === false) {
         if (props.watchType === "timer") {
             startTimer();
