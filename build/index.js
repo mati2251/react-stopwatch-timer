@@ -488,7 +488,7 @@ var Circle = function Circle(props) {
         return { x: xValues, y: yValues };
     };
 
-    var coordinates = circleCoordinates(40, 60, 45, 50);
+    var coordinates = circleCoordinates(40, 60, 50, 50);
     var array = [];
     for (var i = 0; i < 60; i++) {
         var tmp = 30 - i;
@@ -715,8 +715,8 @@ var ReactTimerStopwatch = function ReactTimerStopwatch(props) {
         _react2.default.createElement(_Time2.default, { isOn: props.isOn, hint: getHint, watchType: props.watchType, displayHours: props.displayHours,
             displayMinutes: props.displayMinutes, displaySeconds: props.displaySeconds,
             fromTime: props.fromTime }),
-        props.displayCricle === true ? _react2.default.createElement(_Circle2.default, { color: props.color, tintColor: props.hintColor, hint: hint }) : null,
-        props.children === undefined ? _react2.default.createElement(
+        props.displayCircle === true ? _react2.default.createElement(_Circle2.default, { color: props.color, tintColor: props.hintColor, hint: hint }) : null,
+        props.children !== undefined ? _react2.default.createElement(
             'div',
             { className: 'react-stopwatch-timer__container' },
             props.children
@@ -741,7 +741,7 @@ exports.push([module.i, ".react-stopwatch-timer__element {\n    position: absolu
 
 exports = module.exports = __webpack_require__(1)(false);
 // Module
-exports.push([module.i, ".react-stopwatch-timer__table{\n  height: 100px;\n  width: 100px;\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\n.react-stopwatch-timer__container {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}", ""]);
+exports.push([module.i, ".react-stopwatch-timer__table{\n  height: 200px;\n  width: 200px;\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\n.react-stopwatch-timer__container {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}", ""]);
 
 
 /***/ }),

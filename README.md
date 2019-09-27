@@ -24,7 +24,7 @@ You can import component like below: <br/>
 ### Example use:
 #### Watch without circle
 ![example](https://raw.githubusercontent.com/mati2251/react-stopwatch-timer/master/.github/example-without-circle.png) <br/>
-```
+```js
 import React from 'react';
 import ReactTimerStopwatch from 'react-stopwatch-timer';
 
@@ -38,7 +38,7 @@ export default App;
 ```
 #### Watch with circle
 ![example](https://raw.githubusercontent.com/mati2251/react-stopwatch-timer/master/.github/example-watch-circle.png) <br/>
-```
+```js
 import React from 'react';
 import ReactTimerStopwatch from 'react-stopwatch-timer';
 
@@ -52,7 +52,7 @@ export default App;
 ```
 #### Stopwatch
 ![example](https://raw.githubusercontent.com/mati2251/react-stopwatch-timer/master/.github/stopwatch.png) </br>
-```
+```js
 import React from 'react';
 import ReactTimerStopwatch from 'react-stopwatch-timer';
 
@@ -69,7 +69,7 @@ export default App;
 ```
 #### Timer
 ![example](https://raw.githubusercontent.com/mati2251/react-stopwatch-timer/master/.github/timer.png) <br/>
-```
+```js
 import React from 'react';
 import ReactTimerStopwatch from 'react-stopwatch-timer';
 
@@ -86,7 +86,7 @@ export default App;
 ```
 #### Without Hours
 ![example](https://raw.githubusercontent.com/mati2251/react-stopwatch-timer/master/.github/without-houers.png) <br/>
-```
+```js
 import React from 'react';
 import ReactTimerStopwatch from 'react-stopwatch-timer';
 
@@ -103,7 +103,7 @@ export default App;
 ```
 #### With button inside circle
 ![example](https://raw.githubusercontent.com/mati2251/react-stopwatch-timer/master/.github/withButton.png) <br/>
- ```
+ ```js
 import React, {useState} from 'react';
 import ReactTimerStopwatch from 'react-stopwatch-timer';
 
@@ -128,7 +128,7 @@ export default App;
 in js file: 
 `import './App.css'` <br/>
 in css or scss file: <br/>
-```
+```css
 .react-stopwatch-timer__element {
     width: 3px !important;
     height: 3px !important;
