@@ -44,7 +44,7 @@ import ReactTimerStopwatch from 'react-stopwatch-timer';
 
 const App = () => {
     return (
-            <ReactTimerStopwatch isOn={true} className="react-stopwatch-timer__table" watchType="stopwatch" displayCricle={true} color="gray" hintColor="red"/>
+            <ReactTimerStopwatch isOn={true} className="react-stopwatch-timer__table" watchType="stopwatch" displayCircle={true} color="gray" hintColor="red"/>
     );
 };
 
@@ -61,7 +61,7 @@ const fromTime = new Date(0, 0, 0, 0, 0, 0, 0);
 const App = () => {
     return (
         <ReactTimerStopwatch isOn={true} className="react-stopwatch-timer__table" watchType="stopwatch"
-                             displayCricle={true} color="gray" hintColor="red" fromTime={fromTime}/>
+                             displayCircle={true} color="gray" hintColor="red" fromTime={fromTime}/>
     );
 };
 
@@ -78,7 +78,7 @@ const fromTime = new Date(0, 0, 0, 0, 10, 0, 0);
 const App = () => {
     return (
         <ReactTimerStopwatch isOn={true} className="react-stopwatch-timer__table" watchType="timer"
-                             displayCricle={true} color="gray" hintColor="red" fromTime={fromTime}/>
+                             displayCircle={true} color="gray" hintColor="red" fromTime={fromTime}/>
     );
 };
 
@@ -95,7 +95,7 @@ const fromTime = new Date(0, 0, 0, 0, 10, 0, 0);
 const App = () => {
     return (
         <ReactTimerStopwatch isOn={true} className="react-stopwatch-timer__table" watchType="timer"
-                             displayCricle={true} color="gray" hintColor="red" fromTime={fromTime} displayHours={false}/>
+                             displayCircle={true} color="gray" hintColor="red" fromTime={fromTime} displayHours={false}/>
     );
 };
 
@@ -115,7 +115,7 @@ const App = () => {
 
     return (
         <ReactTimerStopwatch isOn={isOn} className="react-stopwatch-timer__table" watchType="timer"
-                             displayCricle={true} color="gray" hintColor="red" fromTime={fromTime} displayHours={false}>
+                             displayCircle={true} color="gray" hintColor="red" fromTime={fromTime} displayHours={false}>
             <button onClick={() => setIsOn(true) }>START</button>
         </ReactTimerStopwatch>
     );
