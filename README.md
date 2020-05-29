@@ -1,4 +1,5 @@
 # React Timer Stopwatch
+[Live demo](https://github.com/mati2251/react-stopwatch-timer)
 ## 1. What is it
 This is open source project contain React component **ReactTimerStopwatch** which have timer and stopwatch.
 ## 2. Download
